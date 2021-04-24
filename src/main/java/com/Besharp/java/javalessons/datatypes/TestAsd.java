@@ -1,4 +1,4 @@
-package com.Besharp.java.javalessons.lessonone;
+package com.Besharp.java.javalessons.datatypes;
 
 /**
  * Created by Hmayak Atayan on 13, Apr, 2021

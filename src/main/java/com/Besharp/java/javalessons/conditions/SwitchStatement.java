@@ -37,8 +37,5 @@ public class SwitchStatement {
             }
         }
 
-        // difference between switch case and if statement
-        //todo write a program from your input to print the day of week for example 1 = Monday
-
     }
 }

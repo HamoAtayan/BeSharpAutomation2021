@@ -12,7 +12,7 @@ public class ArraysExample {
 //        for (int i = 0; i < array.length; i++) {
 //            System.out.println(array[i]);
 //        }
-array = new int[20];
+        array = new int[20];
         System.out.println(array.length);
     }
 }

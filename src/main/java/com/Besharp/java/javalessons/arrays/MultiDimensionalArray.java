@@ -1,6 +1,8 @@
 package com.Besharp.java.javalessons.arrays;
 
 public class MultiDimensionalArray {
+
+
     public static void main(String[] args) {
         int[][] array = new int[3][2];
 

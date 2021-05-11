@@ -1,4 +1,4 @@
-package com.Besharp.java;
+package com.Besharp.java.javalessons.loops;
 
 public class MaxAndMin {
     public static void main(String[] args) {

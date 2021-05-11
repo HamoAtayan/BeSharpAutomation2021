@@ -1,4 +1,4 @@
-package com.Besharp.java.javalessons;
+package com.Besharp.java.javalessons.arrays;
 
 public class FromInputToArray {
     public static void main(String[] args) {

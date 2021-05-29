@@ -27,6 +27,14 @@ public class CarTest {
         mercedes.voice();
         Car.numberOfWindows = 5;
 
+        Car toyota = new Car();
+        toyota.brandName = "toyota";
+        toyota.horsePower = 200;
+        toyota.isFull = true;
+        System.out.println(toyota);
+        toyota.voice();
+        Car.numberOfWindows = 5;
+
 
         int x = 5;
 

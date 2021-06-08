@@ -24,4 +24,17 @@ public class Car {
         System.out.println("staticTiv = " + staticTiv);
     }
 
+    public void gnal() {
+        System.out.println("gnum enq");
+    }
+
+    public void gnal(int speed, String text) {
+        System.out.println("int , String");
+    }
+
+    public void gnal(String text, int speed) {
+        System.out.println("String, int");
+    }
+
+
 }

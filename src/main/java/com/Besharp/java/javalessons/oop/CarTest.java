@@ -10,6 +10,11 @@ public class CarTest {
         Car mazda = new Car("mazda");
         Car toyota = new Car("toyota");
 
+        short t = 20;
+
+        toyota.gnal(10, "10");
+        toyota.gnal("100", 100);
+
         System.out.println(bmw.name.equals(mers.name));
 
         System.out.println(Car.staticTiv);

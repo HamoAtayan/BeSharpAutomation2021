@@ -10,7 +10,7 @@ import com.Besharp.java.javalessons.oop.june13.person.UserType;
 public class Person {
     private final int age;
     private final String name;
-    private final Address address;
+    private  Address address;
     private final Job job;
     private UserType userType;
 
@@ -18,6 +18,13 @@ public class Person {
         this.age = age;
         this.name = name;
         this.address = address;
+        this.job = job;
+        this.userType = userType;
+    }
+
+    public Person(int age, String name, Job job, UserType userType) {
+        this.age = age;
+        this.name = name;
         this.job = job;
         this.userType = userType;
     }

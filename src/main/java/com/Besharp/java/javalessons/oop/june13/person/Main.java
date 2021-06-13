@@ -12,18 +12,16 @@ public class Main {
         Address workAddress = new Address("Armenia", "Yerevan", "Armenakyan 2/2", 7777);
         Company company = new Company("Webbfonatine", workAddress);
         Job job = new Job("QA", company, 700000);
-//        Person person = new Person(18, "Hamo", address, job);
+        Person person = new Person(18, "Hamo", address, job,UserType.SUPER);
 
-//        System.out.println(person.getCompanyName());
-//
-//        System.out.println(person);
+        System.out.println(person);
 
 //        for (int i = 0; i < DataRepo.data.length ; i++) {
 //            System.out.println(DataRepo.data[i].toString());
 //        }
 
-        for (Person p  : DataRepo.data) {
-            System.out.println(p.toString());
-        }
+//        for (Person p  : DataRepo.data) {
+//            System.out.println(p.toString());
+//        }
     }
 }

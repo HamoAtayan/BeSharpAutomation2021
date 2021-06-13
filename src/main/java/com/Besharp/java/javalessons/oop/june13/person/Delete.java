@@ -12,7 +12,7 @@ public class Delete {
 
         Job qaEngineer = new Job("Qa", company, 100000);
 
-        Person person = new Person(23, "Valentina", address, qaEngineer,UserType.ADMIN);
+        Person person = new Person(23, "Valentina",  qaEngineer,UserType.ADMIN);
 
         System.out.println(person);
     }

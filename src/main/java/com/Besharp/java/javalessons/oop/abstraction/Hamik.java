@@ -44,6 +44,11 @@ public class Hamik implements OnePlanetContract, TechnicalSkills {
     }
 
     @Override
+    public void work() {
+        OnePlanetContract.super.work();
+    }
+
+    @Override
     public void automationSkkills() {
 
     }

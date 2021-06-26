@@ -8,7 +8,7 @@ public interface OnePlanetContract {
 
     void vacationBalance();
 
-    default void thirteenSalary() {
+     default void thirteenSalary() {
         System.out.println("sorry pox chka");
 
     }
@@ -19,6 +19,10 @@ public interface OnePlanetContract {
     static String companyName() {
         System.out.println("OnePlanet");
         return "OnePlanet";
+    }
+
+    default void work(){
+        System.out.println("one planet work");
     }
 
 }

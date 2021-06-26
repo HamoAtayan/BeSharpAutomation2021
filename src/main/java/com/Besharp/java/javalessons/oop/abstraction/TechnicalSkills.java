@@ -11,4 +11,8 @@ public interface TechnicalSkills {
         System.out.println("Technical skills");
 
     }
+
+    default void work(){
+        System.out.println("technical skills work");
+    }
 }

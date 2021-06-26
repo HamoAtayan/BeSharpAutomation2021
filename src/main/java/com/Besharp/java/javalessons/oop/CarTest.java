@@ -9,6 +9,9 @@ public class CarTest {
         Car mers = new Car("mers");
         Car mazda = new Car("mazda");
         Car toyota = new Car("toyota");
+        toyota.gnal();
+        toyota.gnal(10,"a");
+        toyota.gnal("b",20);
 
         short t = 20;
 

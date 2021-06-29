@@ -28,7 +28,6 @@ public class CreateFile {
             exception.getMessage();
         }
 
-
         fileWriter();
 
         System.out.println(fileReader());

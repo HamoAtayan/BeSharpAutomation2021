@@ -7,11 +7,9 @@ import java.util.List;
  * Created by Hmayak Atayan on 29, June, 2021
  **/
 public class AnnoDemo {
-//    @SuppressWarnings("unchecked")
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
-        // compiler
-        // runtime
-        // source
+
 
 //        List y = new ArrayList();
 //        y.add("aaaa");

@@ -5,6 +5,9 @@ package com.Besharp.java.javalessons.anno;
  **/
 public class Parent {
 
+    /**
+     * this method is deprecated please use doSmth  with String argument
+     */
     @Deprecated
     void doSmthg() {
         System.out.println("aaa");

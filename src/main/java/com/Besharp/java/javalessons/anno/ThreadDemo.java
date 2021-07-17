@@ -30,12 +30,8 @@ public class ThreadDemo {
 
 
         text = "aaa";
-
-
             new ThreadDemo().test();
-
         System.out.println("end");
-
     }
 
     public void test() throws InterruptedException {

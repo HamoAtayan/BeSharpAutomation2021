@@ -1,6 +1,9 @@
 package com.Besharp.java.javalessons.javacollections;
 
+import com.Besharp.java.javalessons.javacollections.map.Human;
+
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Hmayak Atayan on 13, July, 2021

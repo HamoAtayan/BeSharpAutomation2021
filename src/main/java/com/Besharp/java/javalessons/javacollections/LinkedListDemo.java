@@ -47,19 +47,27 @@ public class LinkedListDemo {
 //        Mard Tigran = new Mard(25, "Tigran", "Seyranyan", 1);
 //        Mard Hamik = new Mard(25, "Hamik", "Babayan", 3);
 
-        LinkedList<Mard> mardiq = new LinkedList<>();
+        List<Mard> mardiq = new LinkedList<>();
 //        mardiq.add(Artur, Valentina, Tigran, Hamik);
 //        System.out.println(sum(7, 8, 9, 10, 11, 5, 5, 5, 5, 5, 5, 5));
 
-        mardiq.add( new Mard(30, "Arthur", "Madoyan", 5));
+        mardiq.add(new Mard(30, "Arthur", "Madoyan", 5));
         mardiq.add(new Mard(23, "Valentina", "Chakhoyan", 2));
         mardiq.add(new Mard(25, "Tigran", "Seyranyan", 1));
         mardiq.add(new Mard(24, "Hamik", "Babayan", 3));
 //        System.out.println(mardiq);
         mardiq.sort(new AgeComparator());
 
-        for (Mard mardiq3: mardiq
-             ) {
+        System.out.println("---------------------------------------");
+        System.out.println(mardiq.get(2));
+        List<Mard> mardiq2 = new ArrayList<>(mardiq);
+        System.out.println(mardiq2);
+        //ArrayList<String> hash2 = new ArrayList<String>(hash);
+
+        System.out.println("-----------------------------------------------------------");
+
+        for (Mard mardiq3 : mardiq
+        ) {
             System.out.println(mardiq3);
         }
 
@@ -74,7 +82,7 @@ public class LinkedListDemo {
             }
         });
 
-        for (Mard mardiq4: mardiq
+        for (Mard mardiq4 : mardiq
         ) {
             System.out.println(mardiq4);
         }
@@ -88,8 +96,6 @@ public class LinkedListDemo {
 //        }
 //        return sum;
 //    }
-
-
 
 
     }

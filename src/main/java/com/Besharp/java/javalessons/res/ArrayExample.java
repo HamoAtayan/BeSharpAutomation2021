@@ -1,4 +1,4 @@
-package res;
+package com.Besharp.java.javalessons.res;
 
 import org.testng.annotations.Test;
 

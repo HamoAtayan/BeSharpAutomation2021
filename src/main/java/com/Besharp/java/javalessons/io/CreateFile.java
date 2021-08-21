@@ -12,7 +12,7 @@ public class CreateFile {
 
     public static void main(String[] args) {
         new File("res").mkdir();
-//        File file = new File("res/abc.txt");
+//        File file = new File("com.Besharp.java.javalessons.res/abc.txt");
 
         try {
 //            boolean isCreated = file.createNewFile();

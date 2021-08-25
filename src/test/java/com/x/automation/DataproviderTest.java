@@ -11,8 +11,8 @@ public class DataproviderTest extends BaseTest {
         System.out.println(userNAME);
         System.out.println(password);
         driver.get("google.com");
-       driver.findElement(By.id("login")).sendKeys(userNAME);
-       driver.findElement(By.id("pass")).sendKeys(password);
+        driver.findElement(By.id("login")).sendKeys(userNAME);
+        driver.findElement(By.id("pass")).sendKeys(password);
 
     }
 

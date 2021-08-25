@@ -1,48 +1,29 @@
 package com.x.automation;
 
+import automation.Constants;
+import automation.pages.HomePage;
+import automation.pages.LoginPage;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+/**
+ * Created By Hmayak on 2021, Aug, 25
+ */
 public class LoginTest extends BaseTest {
+
     @Test
-    public void validLogin_TC1() {
-        driver.get("https://staff.am/");
-        //login functionality
-        Assert.assertEquals(driver.getCurrentUrl(),"https://staff.am/", "not in home page");
-    }
+    public void login() throws InterruptedException {
+        driver.get("https://www.sas.am/");
+        Thread.sleep(1000);
+        HomePage homePage = new HomePage(driver);
+        homePage.clickOnSignIn();
 
-    @Test(priority = 2)
-    void ablabla() {
-        //some code
-        driver.get("https://staff.am/");
+        LoginPage loginpage = new LoginPage(driver);
+        loginpage.setLogin("login@test.com");
+        loginpage.setPassword("passpass");
+        loginpage.clickOnAcceptCookies();
+        loginpage.clickOnMutq();
 
-        Assert.assertEquals(driver.getCurrentUrl(),"https://staff.am/", "not in home page");
-
-    }
-
-    @Test(priority = 1)
-    void blablabla2() {
-        //some code
-        driver.get("https://staff.am/");
-        Assert.assertEquals(driver.getCurrentUrl(),"https://staaff.am/", "not in home page");
-
-    }
-
-    @BeforeMethod
-    void beforeMethod(){
-        System.out.println("beforeMethod");
-    }
-
-    @AfterMethod
-    void after(){
-        System.out.println("after method");
-    }
-
-    @BeforeClass
-    void beforeClass(){
-        System.out.println("beforeClass");
+        Assert.assertEquals(loginpage.getErorMessage(0), Constants.LOGIN_ERROR_MESSAGE);
     }
 }

@@ -18,6 +18,7 @@ public class InitDriver {
             if (driver.equalsIgnoreCase("chrome")) {
                 WebDriverManager.chromedriver().setup();
                 webDriver = new ChromeDriver();
+                webDriver.manage().window().maximize();
                 return webDriver;
             } else if (driver.equalsIgnoreCase("firefox")) {
                 WebDriverManager.firefoxdriver().setup();
@@ -40,10 +41,12 @@ public class InitDriver {
             if (driver.equalsIgnoreCase("chrome")) {
                 WebDriverManager.chromedriver().setup();
                 webDriver = new ChromeDriver();
+                webDriver.manage().window().maximize();
                 return webDriver;
             } else if (driver.equalsIgnoreCase("firefox")) {
                 WebDriverManager.firefoxdriver().setup();
                 webDriver = new FirefoxDriver();
+                webDriver.manage().window().maximize();
                 return webDriver;
             }
 

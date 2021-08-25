@@ -22,7 +22,7 @@ public class BaseTest {
     @BeforeMethod
     protected void initDriver() {
         InitDriver initDriver = new InitDriver();
-        driver = initDriver.getDriverFromAppProperties();
+        driver = initDriver.getDriver();
     }
 
     @AfterMethod

@@ -9,13 +9,25 @@ import org.openqa.selenium.support.PageFactory;
 public class BasePage {
 
     protected final WebDriver driver;
+    protected String name;
+    private final String serverUrl = "https://www.seleniumeasy.com/";
+    private final String pagePath;
 
-    public BasePage(WebDriver driver){
+    public String getPagePath(){
+        return pagePath;
+    }
+
+    public BasePage(WebDriver driver, String pagePath) {
         this.driver = driver;
+        this.pagePath = pagePath;
         PageFactory.initElements(driver, this);
     }
 
     public WebDriver getDriver() {
         return driver;
+    }
+
+    public void getPage(){
+        driver.get(serverUrl+ getPagePath());
     }
 }

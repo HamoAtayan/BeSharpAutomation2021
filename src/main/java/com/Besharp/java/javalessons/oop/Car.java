@@ -9,7 +9,12 @@ public class Car {
     static int staticTiv = 0;
 
     public int speed;
-    public String name;
+
+    public String getName() {
+        return name;
+    }
+
+    protected String name;
 
     public void run() {
         System.out.println("running in" + speed);

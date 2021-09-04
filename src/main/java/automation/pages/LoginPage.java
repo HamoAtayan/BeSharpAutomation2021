@@ -1,5 +1,6 @@
 package automation.pages;
 
+import automation.helpers.WaitHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,6 +27,9 @@ public class LoginPage extends BasePage {
     })
     private WebElement jjjj;
 
+    @FindBy(css = "a[href='#']")
+    private List<WebElement> links;
+
     @FindBy(css = "button[data-target-id='#sign_in_modal']")
     private WebElement signIn;
 
@@ -33,7 +37,7 @@ public class LoginPage extends BasePage {
     private WebElement acceptCookies;
 
     @FindBy(css = "div.input-error")
-    private List <WebElement> errorMessages;
+    private List<WebElement> errorMessages;
 
     @FindBy(css = "input[type='submit'][value='Մուտք']")
     private WebElement mutq;
@@ -45,30 +49,41 @@ public class LoginPage extends BasePage {
     private WebElement userName;
 
     public LoginPage(WebDriver driver) {
-        super(driver);
+        super(driver,"login");
     }
 
-    public void setLogin(String userName){
+    public void setLogin(String userName) {
+        WaitHelper.waitForAttributeToBe(driver, this.userName, "class", "svg-icon page-header__link-icon");
         this.userName.sendKeys(userName);
     }
 
-    public void setPassword(String password){
-       this.password.sendKeys(password);
+    public void setPassword(String password) {
+        this.password.sendKeys(password);
     }
 
-    public void clickOnMutq(){
+    public void clickOnMutq() {
         mutq.click();
     }
 
-    public String getErorMessage(int index){
+    public String getErorMessage(int index) {
         return errorMessages.get(index).getText();
     }
 
-    public void clickOnAcceptCookies(){
+    public void clickOnAcceptCookies() {
         acceptCookies.click();
     }
 
-    public void clickA(){
+    public void clickA() {
         hh.click();
+    }
+
+    public void clickOnInputForms() {
+        links.get(0).click();
+    }
+
+    public void clickOnDataPicker() {
+        for (int i = 0; i < links.size(); i++) {
+            links.get(i).click();
+        }
     }
 }

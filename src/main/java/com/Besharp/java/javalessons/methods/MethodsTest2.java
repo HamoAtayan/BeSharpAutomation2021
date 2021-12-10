@@ -1,4 +1,4 @@
-package com.Besharp.java.javalessons.Methods;
+package com.Besharp.java.javalessons.methods;
 
 import java.util.Scanner;
 

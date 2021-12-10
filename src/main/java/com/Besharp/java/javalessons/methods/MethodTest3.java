@@ -1,4 +1,4 @@
-package com.Besharp.java.javalessons.Methods;
+package com.Besharp.java.javalessons.methods;
 
 /**
  * Created by Hmayak on 11, May, 2021.
